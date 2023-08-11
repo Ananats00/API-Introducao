@@ -19,8 +19,6 @@ app.listen(port, () => {            // Um socket para "escutar" as requisições
 
 dotenv.config();
 
-import { selectUsuarios } from "./bd.js";
-
 app.get("/usuarios", async (req, res) => {
   console.log("Rota GET/usuarios solicitada");
   try {
